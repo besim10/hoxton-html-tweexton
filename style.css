@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100wh;
+}
+header{
+    background-color: hsl(213deg 66% 32%);
+    display: grid;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+}
+header h1{
+    color: white;
+    margin-bottom: 0.8rem;
+}
+.mainContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10rem;
+    grid-gap: 1.5rem;
+    padding-top: 3rem;
+    justify-content: center;
+}
+.leftSide,
+.mainInside,
+.rightSide{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: start;
+}
+.title{
+    display: grid;
+    color: hsl(213deg 58% 35%);
+    padding-bottom: 1.2rem;
+}
+.tweets{
+    border: solid 1px #aed0fb;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 1rem;
+    border-radius: 1px;
+    margin-bottom: 1rem;
+}
+.profilePic{
+    /* justify-content: center; */
+    display: grid;
+}
+.profilePic img{
+    width: 50px;
+    border-radius: 50%;
+}
+.quotes{
+    /* background-color: violet; */
+    padding-left: 1rem;
+    display: grid;
+    grid-template-rows: auto 1fr;  
+}
+.quotes p{
+    line-height: 2rem;
+    font-style: italic;
+}
+.name{
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    color: #466e9d;
+    text-align: end;
+    font-style: normal;
+    font-variant: small-caps;
+}
+.username{
+    color: #c1cedd;
+}
+.date{
+    color: #b6c5d8;
+}
+.mainInside .tweets{
+    background-color: #3d658b;
+}
+.mainInside .quotes,
+.mainInside .quotes .name {
+    color: white;
+}
